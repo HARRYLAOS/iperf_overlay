@@ -1,16 +1,16 @@
 # iperf_overlay
 IPERF is tough to learn, especially for the Field Engineers who go to each customer and they want to do some tests. 
 They can definately have a saved text file with the commands but that risks that if the customer asks something specific, they wont be able to perform.
-There needs to be a definition of SLA and criteria of acceptance of the service.
-This is the reason this bash was created.
+There needs to be a definition of SLA and criteria of acceptance of the service which is covered in this script.
+This is the reason this bash code was created.
 
 Credits/Coder: Charilaos "Harry" Christopoulos
 LinkedIn: https://www.linkedin.com/in/charilaos-christopoulos/
 
 This special code was created during February 2023 in order to make the IPERF Testing
-a walk in the park with automated scripts for the original IPERF3 Script.
+a walk in the park with automated scripting for the original IPERF3 Script.
 
-This is the final version and its based on the IPERF3 Script in order to work properly.
+This is the -sort of- final version and its based on the IPERF3 Script in order to work properly.
 
 =========================================
 Installation Notes:
