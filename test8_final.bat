@@ -1,39 +1,16 @@
-@ECHO OFF
-REM BFCPEOPTIONSTART
-REM Advanced BAT to EXE Converter www.BatToExeConverter.com
-REM BFCPEEXE=C:\Users\HARRY\Desktop\Harrys_IPERF_Tester.exe
-REM BFCPEICON=
-REM BFCPEICONINDEX=-1
-REM BFCPEEMBEDDISPLAY=0
-REM BFCPEEMBEDDELETE=1
-REM BFCPEADMINEXE=0
-REM BFCPEINVISEXE=0
-REM BFCPEVERINCLUDE=1
-REM BFCPEVERVERSION=1.0.0.0
-REM BFCPEVERPRODUCT=Bandwidth Test
-REM BFCPEVERDESC=Bandwidth Tester based on Iperf3
-REM BFCPEVERCOMPANY=Charilaos Christopoulos
-REM BFCPEVERCOPYRIGHT=2023
-REM BFCPEWINDOWCENTER=1
-REM BFCPEDISABLEQE=0
-REM BFCPEWINDOWHEIGHT=25
-REM BFCPEWINDOWWIDTH=80
-REM BFCPEWTITLE=Harrys Iperf Tester
-REM BFCPEOPTIONEND
-@echo off
 rem Get the public IP of the customer
 for /f "tokens=2" %%a in ('nslookup myip.opendns.com resolver1.opendns.com^| findstr "Address"') do (
   set public_ip=%%a
 )
 :select_server
-set /p server="Select the iperf3 server you want to test towards: 1. Stockholm Region STB 100G 2. GBG GIMP 10G 3. 84grams via Telia Carrier. Type the number and press Enter: "
+set /p server="Select the iperf3 server you want to test towards: 1. Server 1 2. Server 2 3. Server 3. Type the number and press Enter: "
 
 if %server% == 1 (
-  set iperf3_server=90.130.74.149
+  set iperf3_server=1.1.1.1
 ) else if %server% == 2 (
-  set iperf3_server=90.130.74.151
+  set iperf3_server=2.2.2.2
 ) else if %server% == 3 (
-  set iperf3_server=31.12.81.44
+  set iperf3_server=3.3.3.3
 )
 if not defined iperf3_server (
   echo Invalid choice, please try again.
